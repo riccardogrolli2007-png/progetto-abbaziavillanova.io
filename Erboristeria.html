@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abbazia Villanova - Home</title>
+  <link rel="stylesheet" href="abbazia.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Palette base */
+    :root {
+      --bianco: #ffffff;
+      --oro: #c9a227;
+      --viola: #4b2e83;
+      --verde: #2e5d4b;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bianco);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--viola);
+      color: var(--bianco);
+      padding: 15px 30px;
+    }
+
+    header span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--oro);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--bianco);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--oro);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(75,46,131,0.7), rgba(46,93,75,0.7)), url("https://images.unsplash.com/photo-1523362628745-0c100150bdae?auto=format&fit=crop&w=1470&q=80") center/cover;
+      color: var(--bianco);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: var(--oro);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--verde);
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--bianco);
+      border: 2px solid var(--oro);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--viola);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--verde);
+      color: var(--bianco);
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      border-top: 4px solid var(--oro);
+    }
+
+    footer a {
+      color: var(--oro);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <span>Abbazia Villanova</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="storia.html">Storia</a>
+      <a href="musei.html">Musei</a>
+      <a href="corsi.html">Attività</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Benvenuti all'Abbazia di Villanova</h1>
+    <p>Un luogo di storia, arte e spiritualità. Scopri i tesori architettonici, le tradizioni culturali e le attività educative che animano l’abbazia.</p>
+  </section>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <section class="content">
+    <h2>Esplora l’Abbazia</h2>
+    <p>
+      L’Abbazia di Villanova è da secoli punto di riferimento per la comunità, custode di memorie storiche e luogo di incontro per visitatori, studiosi e appassionati. 
+      Scopri la sua storia millenaria, i musei tematici, i corsi di calligrafia e le visite guidate pensate per avvicinare grandi e piccoli al patrimonio culturale.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Storia</h3>
+        <p>Un viaggio tra le epoche: dalle origini medievali alle trasformazioni moderne.</p>
+      </div>
+      <div class="card">
+        <h3>Musei</h3>
+        <p>Collezioni uniche di fossili, cultura contadina e paramenti sacri.</p>
+      </div>
+      <div class="card">
+        <h3>Attività</h3>
+        <p>Corsi di calligrafia, laboratori e visite guidate per tutte le età.</p>
+      </div>
+      <div class="card">
+        <h3>Contatti</h3>
+        <p>Scopri come raggiungerci e rimani aggiornato sulle nostre iniziative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Abbazia di Villanova | <a href="mailto:info@abbaziavillanova.it">info@abbaziavillanova.it</a></p>
+  </footer>
+
+</body>
+</html>
